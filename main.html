@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.jpg" />
+
+    <title>PROJEKT:/黄泉⚡</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h2 class="hero glitch layers" data-text="PROJEKT://黄泉">
+        <span>PROJEKT://黄泉</span>
+      </h2>
+      <div class="iframe-container" id="main-video">
+      
+
+        <iframe width="1100" height="600" src="https://www.youtube.com/embed/JfzHwQ2tCyA" title="Introducing, Projekt://Acheron." frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="next-logo">>></div>
+      </div>
+    </div>
+    <div class="meme-ritual" id="meme">we never lose!</div>
+    <div class="countdown-container" id="timer-wraper">
+      
+      <div class="countdown-timer glow" id="timer">We Rise!</div>
+      <button id="playButton" class="playButtonStyle">Choose your destiny!</button>
+
+      <audio id="myAudio" controls style="display: none">
+        <source src="/audio/epic_rain.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+  </body>
+  <script src="scripts/count-down.js"></script>
+  <script >
+    const timer = document.getElementById("timer");
+    const buttonA = document.getElementById("playButton")
+   buttonA.addEventListener("click", function() {
+      const audio = document.getElementById("myAudio");
+      audio.play();
+      buttonA.style.display = "none";
+      timer.style.display = "block";
+    });
+
+
+  </script>
+</html>
